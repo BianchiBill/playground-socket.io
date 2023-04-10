@@ -1,0 +1,74 @@
+{
+  "name": "socketio",
+  "version": "1.0.0",
+  "description": "An awesome project",
+  "author": "Rafael Bianchi <rafaelbianchi06@gmail.com>",
+  "private": true,
+  "homepage": "https://github.com/BianchiBill/socketio#readme",
+  "keywords": [
+    "node"
+  ],
+  "main": "main.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node main.js",
+    "lint": "jest --config jest-eslint.config.js",
+    "lint:watch": "jest --config jest-eslint.config.js --watch",
+    "jest": "jest --config jest-test.config.js",
+    "jest:coverage": "jest --config jest-test.config.js --coverage",
+    "jest:watch": "jest --config jest-test.config.js --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "ntl": {
+    "descriptions": {
+      "start": "Start development mode",
+      "lint": "Run lint",
+      "lint:watch": "Start lint in watch mode",
+      "jest": "Run tests",
+      "jest:coverage": "Run tests with code coverage",
+      "jest:watch": "Start tests in watch mode",
+      "test": "Run lint + tests",
+      "test:watch": "Start lint + tests in watch mode",
+      "test:coverage": "Run lint + tests with code coverage"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BianchiBill/socketio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BianchiBill/socketio/issues"
+  },
+  "dependencies": {
+    "esm": "3.2.25"
+  },
+  "devDependencies": {
+    "@babel/core": "7.21.4",
+    "@babel/eslint-parser": "7.21.3",
+    "@babel/preset-env": "7.21.4",
+    "@types/jest": "29.5.0",
+    "babel-jest": "29.5.0",
+    "eslint": "8.38.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "jest": "29.5.0",
+    "jest-runner-eslint": "2.0.0",
+    "jest-watch-typeahead": "2.2.2",
+    "prettier": "2.8.7"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/**"
+    ]
+  },
+  "license": "MIT"
+}
